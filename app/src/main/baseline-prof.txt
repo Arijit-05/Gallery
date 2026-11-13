@@ -1,0 +1,38 @@
+# Baseline Profile for Gallery App
+# High-priority ahead-of-time classes for 120Hz smooth operation
+
+Lcom/arijit/gallery/MainActivity;
+HSPLcom/arijit/gallery/MainActivity;->onCreate(Landroid/os/Bundle;)V
+HSPLcom/arijit/gallery/MainActivity;->onResume()V
+Lcom/arijit/gallery/GalleryApp;
+HSPLcom/arijit/gallery/GalleryApp;->onCreate()V
+HSPLcom/arijit/gallery/GalleryApp;->newImageLoader(Lcoil3/PlatformContext;)Lcoil3/ImageLoader;
+
+# Navigation & Root
+Lcom/arijit/gallery/core/navigation/GalleryNavHostKt;
+Lcom/arijit/gallery/core/presentation/ItemBoundsRegistry;
+
+# Photos Screen & LazyVerticalGrid Hot Paths
+Lcom/arijit/gallery/photos/PhotosScreenKt;
+Lcom/arijit/gallery/photos/PhotosViewModel;
+Lcom/arijit/gallery/photos/components/MediaGridTileKt;
+Lcom/arijit/gallery/photos/components/TimelineFastScrollerKt;
+
+# Coil Image Loader & Thumbnail Fetcher
+Lcom/arijit/gallery/core/media/MediaStoreThumbnailFetcher;
+Lcom/arijit/gallery/core/media/MediaThumbnailKeyer;
+Lcom/arijit/gallery/core/media/MediaThumbnailRequest;
+Lcom/arijit/gallery/core/media/MediaRepositoryImpl;
+Lcom/arijit/gallery/core/media/MediaStoreDataSource;
+
+# Viewer Screen, Dismiss Controller & Touch Gesture Pipelines
+Lcom/arijit/gallery/viewer/ViewerScreenKt;
+Lcom/arijit/gallery/viewer/ViewerViewModel;
+Lcom/arijit/gallery/viewer/ViewerLaunchCache;
+Lcom/arijit/gallery/viewer/ViewerDismissController;
+Lcom/arijit/gallery/viewer/components/ZoomablePhotoPageKt;
+Lcom/arijit/gallery/viewer/components/ZoomTransformState;
+Lcom/arijit/gallery/viewer/components/VideoPlayerPageKt;
+
+# 120Hz Jank Tracker
+Lcom/arijit/gallery/core/monitoring/JankTracker;
