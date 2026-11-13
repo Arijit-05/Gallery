@@ -11,9 +11,11 @@ A fast, private, fully offline native Android gallery inspired by the Realme/Col
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="s1.png" width="30%" alt="Photos timeline" />
-  <img src="s2.png" width="30%" alt="Photo viewer" />
-  <img src="s3.png" width="30%" alt="Search" />
+  <img src="s1.png" height="520" alt="Photos timeline" />
+  &nbsp;&nbsp;
+  <img src="s2.png" height="520" alt="Albums" />
+  &nbsp;&nbsp;
+  <img src="s3.png" height="520" alt="Search" />
 </p>
 
 <p align="center">
